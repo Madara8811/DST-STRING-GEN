@@ -24,7 +24,7 @@ async def must_join_channel(bot: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("</> 𝐎𝐅𝐅𝐈𝐂𝐄", url=https://t.me/TEAM_DST),
+                                InlineKeyboardButton("</> 𝐎𝐅𝐅𝐈𝐂𝐄", url=@TEAM_DST),
                             ]
                         ]
                     )
@@ -33,4 +33,4 @@ async def must_join_channel(bot: Client, msg: Message):
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"Promote me as an admin in the MUST_JOIN chat : @TEAM_DST !")
+        print(f"Promote me as an admin in the MUST_JOIN chat : {TEAM_DST} !")
